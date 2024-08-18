@@ -3,7 +3,7 @@ from typing import Optional
 import fire
 import pandas as pd
 
-from feature_pipeline.etl import cleaning, load, extract, validation
+from feature_pipeline.etl import clean, load, extract, validation
 from feature_pipeline import utils
 
 logger = utils.get_logger(__name__)
@@ -78,9 +78,9 @@ def transform(data: pd.DataFrame):
     Wrapper containing all the transformations from the ETL pipeline.
     """
 
-    data = cleaning.rename_columns(data)
-    data = cleaning.cast_columns(data)
-    data = cleaning.encode_area_column(data)
+    data = clean.rename_columns(data)
+    data = clean.cast_columns(data)
+    data = clean.encode_area_column(data)
 
     return data
 

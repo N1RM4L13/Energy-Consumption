@@ -155,3 +155,6 @@ modules.xml
 .idea/misc.xml
 *.ipr
 .idea
+
+### Output folder
+output/
