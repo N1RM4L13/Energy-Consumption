@@ -9,7 +9,7 @@ def build_expectation_suite() -> ExpectationSuite:
     expectation_suite_energy_consumption = ExpectationSuite(
         expectation_suite_name="energy_consumption_suite"
     )
-    print("1")
+
     # Columns.
     expectation_suite_energy_consumption.add_expectation(
         ExpectationConfiguration(
@@ -29,7 +29,7 @@ def build_expectation_suite() -> ExpectationSuite:
             expectation_type="expect_table_column_count_to_equal", kwargs={"value": 4}
         )
     )
-    print(2)
+    
     # Datetime UTC
     expectation_suite_energy_consumption.add_expectation(
         ExpectationConfiguration(
@@ -37,7 +37,7 @@ def build_expectation_suite() -> ExpectationSuite:
             kwargs={"column": "datetime_utc"},
         )
     )
-    print(3)
+    
     # Area
     expectation_suite_energy_consumption.add_expectation(
         ExpectationConfiguration(
@@ -51,7 +51,7 @@ def build_expectation_suite() -> ExpectationSuite:
             kwargs={"column": "area", "type_": "int8"},
         )
     )
-    print(4)
+    
     # Consumer type
     expectation_suite_energy_consumption.add_expectation(
         ExpectationConfiguration(
@@ -107,7 +107,7 @@ def build_expectation_suite() -> ExpectationSuite:
             kwargs={"column": "consumer_type", "type_": "int32"},
         )
     )
-    print(5)
+    
     # Energy consumption
     expectation_suite_energy_consumption.add_expectation(
         ExpectationConfiguration(
