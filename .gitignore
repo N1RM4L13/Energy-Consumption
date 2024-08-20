@@ -158,3 +158,4 @@ modules.xml
 
 ### Output folder
 output/
+wandb/
