@@ -160,3 +160,7 @@ modules.xml
 output/
 wandb/
 artifacts/
+credentials/
+logs/
+plugins/
+dags/
